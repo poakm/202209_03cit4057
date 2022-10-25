@@ -1,7 +1,17 @@
 import random
 
 def answer( numguessing ):
-    # START: You code here  
+    # START: You code here 
+    numberinput = 0 
+    while (numguessing != numberinput) :
+        numberinput = int(input ("Enter a number between 1 to 100:"))
+        if numberinput == numguessing:
+            print ("won")
+        elif numberinput < numguessing:
+            print ("low")
+        else:
+            numberinput > numguessing
+            print ("high") 
     # END: You code here
 
 # Please don't change the code below!!!
