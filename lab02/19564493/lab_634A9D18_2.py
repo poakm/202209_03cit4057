@@ -1,6 +1,16 @@
 def answer( ):
     mean = 0
+    numberinput =1
+    tatol =0
+    count =0
     # START: You code here
+    while (numberinput != 0):
+        numberinput = int (input("enter a number:"))
+        if(numberinput != 0):
+            tatol = tatol + numberinput
+            count = count +1
+    if count > 0:
+        mean = tatol / count
     # END: You code here
     return mean
 

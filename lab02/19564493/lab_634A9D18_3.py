@@ -1,7 +1,12 @@
 def answer(startNumber, endNumber ):
     ret = []
     # START: You code here
-    ret.append(number)
+    if startNumber is startNumber % 2 == 0:
+        ret = range (startNumber,endNumber+1 ,2) 
+    else :
+        ret=range (startNumber+1,endNumber+1 ,2)
+
+
     # END: You code here
     return ret
 
