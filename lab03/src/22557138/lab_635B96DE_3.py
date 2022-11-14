@@ -2,14 +2,14 @@ STACK = "Hello world"
 
 def answer(needle):
     found = False
-    # START: You code here
-    needle = needle.lower()
-    for i in list(STACK.lower()):
-        if needle == i:
+    # START: You code here 
+    if needle.isalpha():
+        # for letter in list(STACK.lower()):
+        #     if letter == needle.lower():
+        #         found = True
+        #         break
+        if needle.lower() in STACK.lower():
             found = True
-            break  
-    # if needle != STACK.isalpha():
-
     # END: You code here
     return found
 

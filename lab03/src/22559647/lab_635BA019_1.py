@@ -1,15 +1,16 @@
 def answer(max_number):
     fibonacci = []
+    # START: You code here  
+    count = 0
+    Ncount = 1
+    while  count <= max_number:
+        fibonacci.append(count)
+        MAXcount = count+Ncount
+        count = Ncount
+        Ncount = MAXcount
+        
 
-    a=0
-    b=1
-    # START: You code here
-    while a <= max_number :
-        fibonacci.append(a)
-        c = a + b
-        a = b
-        b = c
-      
+
     # END: You code here
     return fibonacci
 
